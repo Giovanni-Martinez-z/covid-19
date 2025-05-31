@@ -1,0 +1,11 @@
+# Ignorar modelos entrenados
+*.h5
+*.pb
+*.keras
+modelo_covid_pb/
+
+# Ignorar imágenes de prueba
+COVID19-*.jpg
+NORMAL-*.jpg
+
+

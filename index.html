@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input type="file" id="xray">
+  <button onclick="predict()">Analizar</button>
+  <div id="result"></div>
+
+  <script>
+    async function predict() {
+      const file = document.getElementById('xray').files[0];
+      const form = new FormData();
+      form.append('file', file);
+      
+      const response = await fetch('http://localhost:5000/predict', {
+        method: 'POST',
+        body: form
+      });
+      
+      document.getElementById('result').innerText = JSON.stringify(await response.json());
+    }
+  </script>
+</body>
+</html>

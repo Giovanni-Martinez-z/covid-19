@@ -1,0 +1,6 @@
+flask==2.0.1
+tensorflow-cpu==2.18.0
+protobuf>=3.20.3,<6.0.0  # Rango compatible con TF 2.18.0
+pillow==10.3.0  # Versión más reciente compatible
+werkzeug==2.0.1
+numpy<2.0.0,>=1.23.5  # Rango compatible con TF 2.18.0
